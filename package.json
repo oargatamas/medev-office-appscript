@@ -2,9 +2,17 @@
   "name": "medev-office-appscript-webclient",
   "version": "1.0.0",
   "description": "Medev Project effort sheet utility application based on React and deployed on Google App Script. ",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title medev-office-client --rootDir ./app-script",
+    "gclone": "clasp clone 1CylsEPXJB1EYlzGYPVJsrTpXTvXhfgfVMnr1SvjdBCgRiVuFJslNQu3Y --rootDir ./app-script",
+    "gpush": "clasp push --force",
+    "gpull": "clasp pull",
+    "gstart": "clasp push --watch",
+    "start": "copyfiles --error --flat src/api/test.js app-script/api && parcel src/client/index.html --dist-dir app-script",
+    "build": "copyfiles --error --flat src/api/test.js app-script/api && parcel build src/client/index.html --dist-dir app-script"
   },
   "repository": {
     "type": "git",
@@ -15,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/oargatamas/medev-office-appscript-webclient/issues"
   },
-  "homepage": "https://github.com/oargatamas/medev-office-appscript-webclient#readme"
+  "homepage": "https://github.com/oargatamas/medev-office-appscript-webclient#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.57",
+    "copyfiles": "^2.4.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
