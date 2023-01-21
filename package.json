@@ -1,0 +1,19 @@
+{
+  "name": "medev-office-appscript-webclient",
+  "version": "1.0.0",
+  "description": "Medev Project effort sheet utility application based on React and deployed on Google App Script. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oargatamas/medev-office-appscript-webclient.git"
+  },
+  "author": "Tamás Dániel Oarga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oargatamas/medev-office-appscript-webclient/issues"
+  },
+  "homepage": "https://github.com/oargatamas/medev-office-appscript-webclient#readme"
+}
