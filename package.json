@@ -8,7 +8,7 @@
     "glogout": "clasp logout",
     "gcreate": "clasp create --title medev-office-client --rootDir ./app-script",
     "gclone": "clasp clone 1CylsEPXJB1EYlzGYPVJsrTpXTvXhfgfVMnr1SvjdBCgRiVuFJslNQu3Y --rootDir ./app-script",
-    "gpush": "clasp push --force",
+    "gpush": "clasp push",
     "gpull": "clasp pull",
     "gstart": "clasp push --watch",
     "start": "copyfiles --error --flat src/api/test.js app-script/api && parcel src/client/index.html --dist-dir app-script",

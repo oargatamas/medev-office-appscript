@@ -1,3 +1,3 @@
-function testApi(){
-    return "Thanks! It works.";
+function testApi(param){
+    return "Thanks! It works: " + param;
 }
