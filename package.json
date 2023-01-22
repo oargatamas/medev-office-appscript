@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oargatamas/medev-office-appscript-webclient.git"
+    "url": "git+https://github.com/oargatamas/medev-office-appscript.git"
   },
   "author": "Tamás Dániel Oarga",
   "license": "ISC",
