@@ -21,9 +21,9 @@
   "author": "Tamás Dániel Oarga",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oargatamas/medev-office-appscript-webclient/issues"
+    "url": "https://github.com/oargatamas/medev-office-appscript/issues"
   },
-  "homepage": "https://github.com/oargatamas/medev-office-appscript-webclient#readme",
+  "homepage": "https://github.com/oargatamas/medev-office-appscript#readme",
   "devDependencies": {
     "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.57",
