@@ -11,8 +11,8 @@
     "gpush": "clasp push",
     "gpull": "clasp pull",
     "gstart": "clasp push --watch",
-    "start": "copyfiles --error --flat src/api/test.js app-script/api && parcel src/client/index.html --dist-dir app-script",
-    "build": "copyfiles --error --flat src/api/test.js app-script/api && parcel build src/client/index.html --dist-dir app-script"
+    "start": "parcel src/index.html --dist-dir app-script",
+    "build": "parcel build src/index.html --dist-dir app-script"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,23 @@
     "url": "https://github.com/oargatamas/medev-office-appscript/issues"
   },
   "homepage": "https://github.com/oargatamas/medev-office-appscript#readme",
+  "staticFiles": [
+    {
+      "staticPath": "src/api",
+      "staticOutPath": "api"
+    },
+    {
+      "staticPath": "src/appsscript.json"
+    },
+    {
+      "staticPath": "src/main.js"
+    }
+  ],
   "devDependencies": {
     "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.57",
-    "copyfiles": "^2.4.1",
     "parcel": "^2.8.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
     "process": "^0.11.10"
   },
   "dependencies": {
